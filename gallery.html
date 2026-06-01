@@ -1,0 +1,47 @@
+# CodeAlpha_Image_Gallery
+A responsive Image Gallery built using HTML, CSS, and JavaScript. Features a clean user interface, image preview functionality, and a modern design for an enhanced user experience."
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+
+  <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('cars')">Cars</button>
+    <button onclick="filterImages('animals')">Animals</button>
+  </div>
+
+  <div class="gallery">
+
+    <img src="https://picsum.photos/id/10/500/400" class="gallery-item nature" alt="">
+    <img src="https://picsum.photos/id/20/500/400" class="gallery-item nature" alt="">
+    
+    <img src="https://picsum.photos/id/30/500/400" class="gallery-item cars" alt="">
+    <img src="https://picsum.photos/id/40/500/400" class="gallery-item cars" alt="">
+    
+    <img src="https://picsum.photos/id/50/500/400" class="gallery-item animals" alt="">
+    <img src="https://picsum.photos/id/60/500/400" class="gallery-item animals" alt="">
+
+  </div>
+
+  <div id="lightbox">
+    <span class="close">&times;</span>
+
+    <button class="prev">&#10094;</button>
+
+    <img id="lightbox-img">
+
+    <button class="next">&#10095;</button>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
